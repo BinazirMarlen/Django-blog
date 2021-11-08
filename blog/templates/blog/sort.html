@@ -1,0 +1,12 @@
+{%extends 'blog/list.html'%}
+
+{% block content %}
+    {% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <p>{{post.published_date}}</p>
+    <img src="{{post.img.url}}" alt="">
+
+    {%endfor%}
+
+{%endblock%}
+ 
